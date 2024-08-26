@@ -7,6 +7,7 @@ const Home: FC = () => {
     return (
         <div className={'home'}>
             { t('title') }
+            { t('name') }
         </div>
     );
 };
