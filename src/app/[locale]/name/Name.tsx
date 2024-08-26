@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Chars from '@/components/Chars/CharsItems/Chars';
 import CharsTags from '@/components/Chars/CharsTags/CharsTags';
 
-export default function Name() {
+export default function Name( {profile}: {profile: string}) {
   return (
     <div className={styles.wrapper}>
         <div className={styles.imgSide}>
@@ -64,6 +64,7 @@ export default function Name() {
                     <div className={styles.whatsapp}>
                         <Image src={'/public/NamePage/wapp.svg'} alt={'whatsapp'} />
                         <button className={styles.whatsappBtn}>Whatsapp</button>
+                        <b className={styles.profileNumber}>{profile}</b>
                     </div>
                 </div>
             </div>
