@@ -5,6 +5,9 @@
     --black:              #000000;
     --white:              #ffffff;
 
+    // Background Colors
+    --bg-color:           #262626;
+
     // Border Radius Variables
     --radius:             4px;
     --radius-md:          8px;
@@ -14,4 +17,7 @@
     --f-weight-regular:   400;
     --f-weight-semi-bold: 600;
     --f-weight-bold:      700;
+
+    // Gradient Variables
+    --gradient: linear-gradient(180deg, #E73951 0%, #8C1C48 100%);
 }

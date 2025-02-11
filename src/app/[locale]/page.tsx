@@ -1,13 +1,15 @@
 import { FC } from 'react';
 import { useTranslations } from 'next-intl';
+import styles from './page.module.css';
+import { MantineProvider } from '@mantine/core';
 
 const Home: FC = () => {
     const t = useTranslations('main');
 
     return (
-        <div className={'home'}>
-            { t('title') }
-        </div>
+        <MantineProvider>
+            <p className={styles.title}>{ t('title') }</p>
+        </MantineProvider>
     );
 };
 

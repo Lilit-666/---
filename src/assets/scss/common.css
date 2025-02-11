@@ -1,0 +1,78 @@
+@import "sanitize.css";
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --bg-color: #262626;
+  --radius: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --f-weight-regular: 400;
+  --f-weight-semi-bold: 600;
+  --f-weight-bold: 700;
+  --gradient: linear-gradient(180deg, #E73951 0%, #8C1C48 100%);
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 400;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after, *:active, *:focus, *:hover {
+  outline: none;
+  outline-offset: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: var(--f-weight-regular);
+  line-height: 1.5em;
+  color: var(--white);
+  background: var(--bg-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}/*# sourceMappingURL=common.css.map */
