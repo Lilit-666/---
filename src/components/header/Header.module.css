@@ -1,0 +1,61 @@
+.headerBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: var(--mantine-spacing-xs);
+    height: 60px;
+    z-index: 1000000;
+    transition: transform 400ms ease;
+    background-color: var(--mantine-color-body);
+}
+
+.headerBox.pinned {
+transform: translate3d(0, 0, 0);
+}
+
+.headerBox.not-pinned {
+transform: translate3d(0, -110px, 0);
+}
+
+.headerTop {
+    padding: 0 104px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.regionText {
+    display: flex;
+    gap: 20px
+}
+
+.btn {
+    opacity: 50%;
+    background: transparent;
+    border: none;
+    color: var(--white);
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    opacity: 100%;
+}
+
+.business {
+    display: flex;
+    gap: 20px;
+}
+
+
+.link {
+    text-decoration: none;
+    color: var(--white);
+    opacity: 50%;
+    transition: all 0.3s;
+}
+
+.link:hover {
+    opacity: 100%;
+}
+
